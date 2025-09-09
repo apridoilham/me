@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprido Ilham | Software Engineer Portfolio</title>
+    <meta name="description" content="The Software Engineer portfolio of Aprido Ilham, showcasing projects in modern web development using React, Node.js, and other technologies.">
+    <meta name="author" content="Aprido Ilham">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cursor-light-effect"></div>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#hero" class="logo">Aprido Ilham<span>.</span></a>
+                <ul class="nav-links" id="nav-menu">
+                </ul>
+                <div class="hamburger" id="hamburger" role="button" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="hero" aria-labelledby="hero-title-text">
+            <div class="hero-content">
+                <p class="hero-intro reveal">Hello, I'm Aprido Ilham</p>
+                <h1 id="hero-title" class="hero-title reveal"></h1>
+                <p id="hero-title-text" class="hero-description reveal">
+                    Transforming complex ideas into elegant digital solutions.
+                </p>
+                <div class="hero-cta reveal">
+                    <a href="#projects" class="btn btn-primary"><i class="fas fa-briefcase"></i> View Projects</a>
+                    <a href="#contact" class="btn btn-secondary"><i class="fas fa-envelope"></i> Contact Me</a>
+                </div>
+            </div>
+        </section>
+        <div class="main-content-wrapper">
+            <div class="content-column">
+                <section id="skills" class="section" aria-labelledby="skills-title">
+                    <h2 id="skills-title" class="section-title">Tech Stack</h2>
+                    <div id="skills-container"></div>
+                </section>
+                <section id="experience" class="section" aria-labelledby="experience-title">
+                    <h2 id="experience-title" class="section-title">Work Experience</h2>
+                    <ol id="experience-container" class="timeline"></ol>
+                </section>
+                <section id="certificates" class="section" aria-labelledby="certificates-title">
+                    <h2 id="certificates-title" class="section-title">Certifications</h2>
+                    <div id="certificates-container" class="grid-container"></div>
+                </section>
+                <section id="projects" class="section" aria-labelledby="projects-title">
+                    <h2 id="projects-title" class="section-title">Featured Projects</h2>
+                    <div id="projects-container" class="grid-container"></div>
+                </section>
+            </div>
+            <aside id="about" class="sidebar-column" aria-labelledby="about-title">
+                 <div class="sidebar-card">
+                    <h2 id="about-title" class="section-title">About Me</h2>
+                    <div id="about-container" class="about-content">
+                    </div>
+                </div>
+            </aside>
+        </div>
+        <section id="contact" class="section" aria-labelledby="contact-title">
+             <div class="contact-content">
+                <h2 id="contact-title" class="contact-title">Let's Connect</h2>
+                <p>
+                    I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Feel free to reach out.
+                </p>
+                <address>
+                    <div id="contact-socials" class="social-links"></div>
+                    <a href="mailto:aprido.ilham@example.com" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Send Email</a>
+                </address>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+             <nav aria-label="Footer Social Links">
+                <div id="footer-socials" class="footer-socials"></div>
+             </nav>
+             <p class="copyright">
+                &copy; 2025 Aprido Ilham. Designed and Built with ❤️.
+            </p>
+        </div>
+    </footer>
+    <button id="back-to-top" title="Back to top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+    <dialog id="pdf-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button id="modal-close" class="modal-close-btn" aria-label="Close PDF viewer">&times;</button>
+            <div class="pdf-viewer">
+                <canvas id="pdf-canvas"></canvas>
+            </div>
+            <nav class="pdf-navigation" aria-label="PDF Paging">
+                <button id="prev-page" class="nav-btn"><i class="fas fa-arrow-left"></i> Previous</button>
+                <span id="page-indicator" role="status" aria-live="polite">Page <span id="page-num"></span> of <span id="page-count"></span></span>
+                <button id="next-page" class="nav-btn">Next <i class="fas fa-arrow-right"></i></button>
+            </nav>
+        </div>
+    </dialog>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
